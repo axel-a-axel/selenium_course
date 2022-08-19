@@ -22,6 +22,7 @@ try:
     field4.send_keys(file_path)
     button = browser.find_element(By.XPATH, '//button')
     button.click()
+    browser.switch_to.a
 
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
