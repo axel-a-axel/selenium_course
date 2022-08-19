@@ -5,14 +5,13 @@ import time
 import math
 
 
-link = 'http://suninjuly.github.io/selects2.html'
+link = 'http://suninjuly.github.io/get_attribute.html'
 try:
     browser = webdriver.Chrome()
     browser.get(link)
 
-    n1 = browser.find_element(By.XPATH, '//span[@id="num1"]').text
-    n2 = browser.find_element(By.XPATH, '//span[@id="num2"]').text
-    res = int(n1) + int(n2)
+    n1 = browser.find_element(By.XPATH, '//img[@id="treasure"]"]').get_attribute('valuex')
+
     select = Select(browser.find_element(By.TAG_NAME, "select"))
     select.select_by_value(str(res))
     button = browser.find_element(By.XPATH, '//button')
