@@ -32,7 +32,7 @@ class TestAbs(unittest.TestCase):
             welcome_text = welcome_text_elt.text
 
             # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-            unittest.TestCase.assertEqual("Congratulations! You have successfully registered!", welcome_text, 'not equal 1?')
+            self.assertEqual("Congratulations! You have successfully registered!", welcome_text, 'not equal 1?')
 
         finally:
             # ожидание чтобы визуально оценить результаты прохождения скрипта
@@ -68,7 +68,7 @@ class TestAbs(unittest.TestCase):
             welcome_text = welcome_text_elt.text
 
             # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
-            unittest.TestCase.assertEqual("Congratulations! You have successfully registered!", welcome_text, 'not equal 2?')
+            self.assertEqual("Congratulations! You have successfully registered!", welcome_text, 'not equal 2?')
 
         finally:
             # ожидание чтобы визуально оценить результаты прохождения скрипта
